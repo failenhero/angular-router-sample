@@ -1,5 +1,16 @@
+<ng-container *ngIf="crisis$ | async as crisis">
+  <div>
+    <h2>{{crisis.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{crisis.id}}</div>
+    <div>
+      <label for="hero-name">Crisis name: </label>
+      <input id="hero-name" [(ngModel)]="crisis.name" placeholder="name"/>
+    </div>
+    <br>
+  </div>
+  <button (click)="gotoCrises()">
+    Go back to crisis-list
+  </button>
+</ng-container>
 
 
-<button (click)="gotoCrises()">
-  Go back to crisis-list
-</button>

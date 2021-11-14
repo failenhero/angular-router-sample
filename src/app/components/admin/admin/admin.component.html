@@ -1,0 +1,8 @@
+<h2>Admin</h2>
+<nav>
+  <button routerLink="./" routerLinkActive="active"
+     [routerLinkActiveOptions]="{ exact: true }">Dashboard</button>
+  <button routerLink="./crises" routerLinkActive="active">Manage Crises</button>
+  <button routerLink="./heroes" routerLinkActive="active">Manage Heroes</button>
+</nav>
+<router-outlet></router-outlet>
